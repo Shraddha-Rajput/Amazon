@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="com.qa.Utility.Reporting"></listener>
+	</listeners>
+	<parameter name="Browser" value="chrome"></parameter>
+
+	<test thread-count="5" name="Test1">
+		<parameter name="url" value="https://www.amazon.in/" />
+		<classes>
+			<class name="com.qaTestCase.TcAmazon" />
+		</classes>
+	</test>
+
+
+
+
+	<!-- <test thread-count="5" name="Test2"> <parameter name="url" value="https://www.google.co.in/" 
+		/> <classes> <class name="com.qaTestCase.Tc_GoogleAutosuggest" /> </classes> 
+		</test> -->
+</suite> <!-- Suite -->
